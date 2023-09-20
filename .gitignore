@@ -1,0 +1,8 @@
+node_moodules/
+vendor/
+
+package-lock.json
+composer.lock
+storage/
+public/uploads/
+public/storage/
