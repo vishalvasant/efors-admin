@@ -93,7 +93,7 @@ class CategoryController extends Controller
     {
         $validated = $request->validated();
         $validated['active'] = $request->has('active');
-
+        $public_path = "";
         if ($request->hasFile('img_url')) {
             $image = $request->file('img_url');
             $filename = 'image.'.$image->getClientOriginalExtension();
