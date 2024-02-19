@@ -10,7 +10,7 @@ class CategoryController extends BaseController
 {
     public function index(): JsonResponse
     {
-        $categories = Category::isActive()->get(['id', 'name']);
+        $categories = Category::isActive()->get(['id', 'name','img_url']);
         return $this->sendResponse(CategoryResource::collection($categories), 'Categories fetched.');
     }
 
